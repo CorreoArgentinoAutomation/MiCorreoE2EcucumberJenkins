@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         glue = {"stepsDefinitions", "framework"},
         plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
 			"junit:target/cucumber-reports/Cucumber.xml",
-			"html:target/cucumber-reports.html"},                
+			"html:target/cucumber-reports/Cucumber.html"},                
         tags =  "@PRUEBA2"
 )
 public class TestRunner {
