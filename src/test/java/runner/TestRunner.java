@@ -10,7 +10,9 @@ import org.junit.runner.RunWith;
         publish = true,
         features = {"src/main/resources/features"},
         glue = {"stepsDefinitions", "framework"},
-        plugin = { "pretty", "junit:target/cucumber-reports/Cucumber.xml" },
+        plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
+                "junit:target/cucumber-reports/Cucumber.xml",
+                "html:target/cucumber-reports"},
         tags =  "@PRUEBA2"
 )
 public class TestRunner {
