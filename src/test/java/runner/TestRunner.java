@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
         glue = {"stepsDefinitions", "framework"},
         plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
 			"junit:target/cucumber-reports/Cucumber.xml",
-			"html:target/cucumber-reports/Cucumber.html"},                
+			"html:target/cucumber-reports/Cucumber.html"},
+	monochrome = true,
         tags =  "@PRUEBA2"
 )
 public class TestRunner {
